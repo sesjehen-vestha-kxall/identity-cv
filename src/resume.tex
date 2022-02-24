@@ -1,0 +1,388 @@
+% READ THE CONTENTS IN THIS FILE
+\input{structure.tex}
+
+% ================================================= %
+% Created from scratch by: Miguel Angel Avila Torres
+% Licensed under MIT Licence
+% ================================================= %
+
+% PRETTY COLORS!
+
+% 1C3738 | DARK GREEN
+% 283618 | GREEN NATURE
+% C44900 | MAHOGANY
+% 04151F | RICH BLACK FOGRA 29
+% 432534 | DARK PURPLE
+% 14213d | SOLID OCEAN
+% 023047 | ROYAL BLUE
+% 333d29 | EVANESCENT GREEN
+% 7f4f24 | EXECUTIVE BROWN
+% 780000 | RED BLOOD
+
+\definecolor{color-theme}{HTML}{1C3738}
+
+\begin{document}
+\begin{tikzpicture}[overlay, remember picture]
+	\fill[fill=color-theme]
+		($ (current page.north west) $) -- 
+		($ (current page.north east) $) -- 
+		($ (current page.north east) + (0cm, -5.5cm)$) --
+		($ (current page.north west) + (0cm, -5.5cm)$);
+		
+	\node at ($ (current page.north) + (0cm, -2.6cm) $) {
+		\parbox{\textwidth}{%
+			\begin{center}
+				\color{white}
+				{% NAME
+					\fontsize{36}{36}\sffamily
+						{\bfseries Miguel A.}
+							Avila T.
+				}\\\vspace*{8pt}%
+				{% TITLES
+					\fontsize{10}{10}\sffamily Systems Engineer (c)
+					$\cdot$ Database Administrator
+					$\cdot$ IT Technician
+				}\\\vspace*{8pt}%
+				{% CONTACT
+					\Mail
+					{your@email.com}% email
+					\GitHub
+					{sesjehen-vestha-kxall}% github user
+					\LinkedIn
+					{https://www.linkedin.com/in/miguel-angel-avila-torres-303a701ba/}
+					{Miguel Avila}%linkedin link and user name
+				}\\\vspace*{14pt}%
+				{% SLOGAN
+					\fontsize{10}{10}\sffamily{
+						\emph{``Make the difference, 
+							keep it simple.''}\vspace*{-6pt}}%
+				}%
+			\end{center}
+		}
+	};
+\end{tikzpicture}
+
+\vspace*{4cm}
+
+\fontsize{8}{8}\rmfamily
+
+\separator
+
+\section{Summary}
+My interests are Back-end, Front-end and Full-stack development,
+Database Design, Software Architecture, and ML.
+Through these years I have honed a code refactoring and 
+optimization skill under the KISS principle 
+(keep it simple, stupid) because simplicity is the
+key to efficiency, scalability and mainanability.
+(Note that simplicity $\neq$ mediocrity)
+
+\separator
+
+\section{Portfolio}
+\reducespace
+\begin{multicols}{2}\raggedcolumns%
+	\subsection{Programming Languages}
+	\reducespace
+	% COMMENTED THINGS ARE those ones that I haven't 
+	% worked with it in a long time
+	\begin{multicols}{3}\raggedcolumns%
+		\begin{cvlist}
+			\item Octave% (2020) [first time I worked with it]
+			\item PostgreSQL% (2020)
+			\item SQLite% (2019)
+			\item JavaScipt% (2019)
+%			\item PHP% (2019)
+			\item MySQL% (2019)
+%			\item GOLang% (2018)
+			\item Python% (2018)
+			\item \LaTeX% (2018)
+			\item C\#% (2017)
+			\item Java% (2017)
+			\item C++% (2017)
+		\end{cvlist}
+	\end{multicols}
+	
+	\subsection{Tools \& Engines}
+	\reducespace
+	\begin{multicols}{3}\raggedcolumns%
+		\begin{cvlist}
+			\item SoapUI
+			\item NodeJS
+%			\item MySQL Shell
+%			\item PG Shell
+			\item Postman
+			\item Idea
+			\item PyCharm
+			\item VS Code
+			\item Unity 3D
+%			\item Composer
+			\item Docker
+			\item XAMPP
+			\item Git
+			\item StarUML
+		\end{cvlist}
+	\end{multicols}
+
+	\subsection{Frameworks \& Stacks}	
+	\reducespace
+	\begin{multicols}{2}\raggedcolumns%
+		\begin{cvlist}
+			\item Django Rest Framework% (2022)
+			\item Django% (2021)
+			\item React% (2021)
+			\item Flask% (2020)
+			\item Spring% (2020)
+%			\item Vue% (2019)
+%			\item Laravel% (2019)
+%			\item LAMP% (2019)
+			\item WAMP% (2019)
+		\end{cvlist}
+	\end{multicols}
+
+	\subsection{Operative Systems}
+	\reducespace
+	\begin{multicols}{2}\raggedcolumns%
+		\begin{cvlist}
+			\item Fedora
+			\item Linux Mint
+			\item Ubuntu
+			\item Windows
+		\end{cvlist}
+	\end{multicols}
+	
+	\subsection{Languages}
+	\reducespace
+	\begin{multicols}{2}\raggedcolumns%
+		\begin{cvlist}
+			\item Spanish --- Native
+			\item English --- C1
+		\end{cvlist}
+	\end{multicols}
+\end{multicols}
+\reducespace
+
+\separator
+
+\section{Education}
+\reducespace
+\begin{multicols}{2}\raggedcolumns%
+	\subsection{Universidad Santo Tomás}
+	\interval{Aug 2018 ‑-- PRESENT}\\[4pt]
+	Systems Engineering Degree\\
+	\originaltitle{Grado en Ingeniería de Sistemas}
+
+	\subsection{Udemy}
+	\begin{cvlist}
+		\cvitem
+		{Angular Material Ultimate Course}
+		{}
+		
+		\cvitem
+		{Project Management Essentials: A practical approach}
+		{}
+		
+		\cvitem
+		{The Complete Python 3 Course: Beginner to Advanced!}
+		{}
+	\end{cvlist}	
+
+	\subsection{Platzi}
+	\begin{cvlist}
+%		\cvitem
+%		{Algebra Course}
+%		{Curso de Algebra}
+		
+		\cvitem
+		{Linear Algebra with Python}
+		{Algebra Lineal con Python}
+		
+		\cvitem
+		{Linear Algebra Applied to Machine Learning}
+		{Algebra Lineal Aplicada para Machine Learning}
+		
+		\cvitem
+		{Mathematics for Data Science: Basic Calculus}
+		{Matematicas para Data Science: Cálculo Básico}
+		
+		\cvitem
+		{Multivariable Calculus}
+		{Calculo Multivariable}
+		
+		\cvitem
+		{Discrete Mathematics}
+		{Matematicas Discretas}
+				
+		\cvitem
+		{Practical Fundamentals of Machine Learning}
+		{Fundamentos Practicos de Machine Learning}
+		
+		\cvitem
+		{Fundamentals of Software Engineering}
+		{Fundamentos de Ingeniería de Software}
+		
+		\cvitem
+		{Business Analysis for Data Science}
+		{Analisis de Negocios para Ciencia de Datos}
+				
+		\cvitem
+		{OOP and Algorithms in Python}
+		{POO y Algoritmos en Python}
+		
+		\cvitem
+		{Introduction to probabilistic thinking}
+		{Introducción al Pensamiento Probabilistico}
+		
+		\cvitem 
+		{Computational Statistics with Python}
+		{Estadistica Computacional con Python}
+		
+		\cvitem
+		{Intermediate Python}
+		{Python Intermedio}
+
+		\cvitem
+		{Linear Regression with Python}
+		{Regresion Lineal con Python}
+		
+%		\cvitem
+%		{Introduction to the Command Line}
+%		{Introduccion a la Terminal de Comandos}
+	\end{cvlist}
+	\subsection{Carlos Slim Foundation}
+	\begin{cvlist}
+		\cvitem
+		{Front‑end Developer}
+		{Desarrollador Front-End}
+		
+		\cvitem
+		{Version Control}
+		{Control de versiones}
+		
+		\cvitem
+		{Database Administrator}
+		{Administrador de bases de datos}
+		
+		\cvitem 
+		{IT Technical Analyst}
+		{Analista técnico en TI}
+		
+%		\cvitem
+%		{Programming Logic - C++}
+%		{Lógica de programación - c++} (seems too basic)
+		
+%		\cvitem
+%		{Programmer (object oriented) ‑ Python}
+%		{Programador (orientado a objetos)}
+		
+		\cvitem
+		{IT Technician}
+		{Técnico en informática}
+		
+	\end{cvlist}
+	\subsection{National Learning Service (SENA)}
+	\begin{cvlist}
+		
+		\cvitem
+		{Databases, Generalities and Management Systems}
+		{BASES DE DATOS GENERALIDADES Y SISTEMAS DE GESTION}
+
+%		Procure to only take courses with meaningful titles...
+%		otherwise you'll just waste time
+%		
+%		\cvitem
+%		{Modules, storage structure and OOP using C++ (Level II)}
+%		{MODULOS, ESTRUCTURA DE ALMACENAMIENTO Y POO UTILIZANDO EL LENGUAJE DE PROGRAMACION C++ (NIVEL II)}
+%
+%		\cvitem
+%		{Structure of the C++ programming language (Level I)}
+%		{ESTRUCTURA DEL LENGUAJE DE PROGRAMACION C++ (NIVEL I)}
+		
+		\cvitem
+		{Principles of Object Oriented Analysis and Design, Using the UML Standard}
+		{PRINCIPIOS DEL ANALISIS Y DISEÑO ORIENTADO A OBJETOS, UTILIZANDO EL ESTANDAR UML}
+		
+		\cvitem
+		{Software Quality Application in the Development Process}
+		{APLICACION DE LA CALIDAD DEL SOFTWARE EN EL PROCESO DE DESARROLLO}
+		
+		\cvitem
+		{Quality in the Software Development}
+		{CALIDAD EN EL DESARROLLO DE SOFTWARE}
+
+		\cvitem
+		{Web development with PHP}
+		{DESARROLLO WEB CON PHP}
+
+	\end{cvlist}
+	\subsection{Nuestra Señora del Rosario ‑ Tunja}
+	\begin{cvlist}
+		\item High School
+	\end{cvlist}
+\end{multicols}
+
+\separator
+
+\section{Projects}
+\reducespace
+\renewcommand{\baselinestretch}{1.4}
+\begin{multicols}{2}\raggedcolumns%
+	
+	\parbox{0.48\textwidth}{
+		\subsection{hydro-wave-visualizer}
+		\interval{Jun 2021}
+		Six real valued wave functions of the hydrogen atom 
+		(1s, 2s, 2p, 3s, 3p, 3d) are analyzed respect its convergence
+		with the MonteCarlo integration method, then plotted using an
+		implementation of the stochastic method via matplotlib.\\
+		
+		\projectsource{https://github.com/sesjehen-vestha-kxall/hydro-wave-visualizer}
+	}
+
+	\parbox{0.48\textwidth}{
+		\subsection{hard-cs-and-se-problems}
+		\interval{Dec 2020}
+		A collection of problems which from 
+		an standard point of view are hard (really) 
+		along with some resources.\\
+		
+		\projectsource{https://github.com/sesjehen-vestha-kxall/hard-cs-and-se-problems}
+	}
+\end{multicols}
+
+\separator
+
+\section{Research and Writings}
+\reducespace
+\begin{multicols}{2}\raggedcolumns%
+	\parbox{0.48\textwidth}{
+		\subsection{Numerical Simulations of Probability Distributions for the Hydrogen’s Atom Wave Functions}
+		Author \& Researcher \hfill \interval{Nov 2020}\\[4pt]
+		Topics: \textit{Quantum Physics, 
+		Electric Physics, Numerical Methods,
+		Simulation, Visualization.}
+	}
+\end{multicols}
+
+\separator
+
+\section{Personal References}
+\begin{multicols}{2}\raggedcolumns%
+	\subsection{First Name Last Name}
+	Title. \\
+	(+XX) XXX XXX XXXX
+\end{multicols}
+
+\vspace*{12pt}
+
+% COMMENT OR REMOVE THIS PARAGRAPH
+\ttfamily{%
+	\%\%\%\%  NOTE: This resume doesn't represent my full\\
+	\%\%\%\%  CV and excludes private information.
+}
+
+\end{document}
+
+
+
+

@@ -1,0 +1,175 @@
+%----------------------------------------------------------------
+%---------------------BASIC SETUP-------------------------------
+%----------------------------------------------------------------
+
+\documentclass[9pt]{article}
+\usepackage[
+	top=1.4cm,
+	bottom=2.4cm,
+	left=1.5cm,
+	right=1.5cm,
+	headsep=10pt,
+	letterpaper
+]{geometry}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{fancyhdr} % fancy headdings
+\usepackage{tabularx}
+\usepackage[hyphens,spaces]{url}
+\usepackage[hidelinks]{hyperref} % hyperreferences in the document
+\usepackage{tcolorbox}
+
+%----------------------------------------------------------------
+%-------------HEADINGS APPEARENCE WHEN INVOKED-------------------
+%----------------------------------------------------------------
+\usepackage{multicol}
+\setlength{\columnsep}{1cm} %Column Separation
+
+\usepackage[toctitles]{titlesec} % section titles
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+
+\setcounter{secnumdepth}{0}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]
+{\llap{\textcolor{color-theme}{\csname the#1\endcsname}\hspace{1em}}}                    
+
+\renewcommand{\section}{%
+	\@startsection{section}%
+	{1}%
+	{0pt}%
+	{-2ex \@plus -1ex \@minus -.2ex}%
+	{1ex \@plus.2ex }%
+	{\noindent\normalfont\large\sffamily\bfseries\color{color-theme}}%
+}
+
+\renewcommand{\subsection}{%
+	\@startsection{subsection}%
+	{2}%
+	{\z@}%
+	{-2ex \@plus -0.1ex \@minus -.4ex}%
+	{0.6ex \@plus.2ex }%
+	{\fontsize{9}{9}\sffamily\bfseries}%
+}
+
+\renewcommand{\subsubsection}{%
+	\@startsection{subsubsection}%
+	{3}%
+	{\z@}%
+	{-2ex \@plus -0.1ex \@minus -.2ex}%
+	{.2ex \@plus.2ex }%
+	{\normalfont\small\sffamily\bfseries}%
+}
+
+\renewcommand\paragraph{%
+	\@startsection{paragraph}%
+	{4}%
+	{\z@}%
+	{-2ex \@plus-.2ex \@minus .2ex}%
+	{.1ex}%
+	{\normalfont\small\sffamily\bfseries}%
+}
+
+\makeatother
+
+
+%----------------------------------------------------------------
+%---------------------------FONTS--------------------------------
+%----------------------------------------------------------------
+
+\usepackage{xcolor} % use of \color{}
+\definecolor{rmblack}{HTML}{0E0E0E}
+\definecolor{dimgray}{HTML}{606060}
+
+\usepackage[
+	usefilenames,
+%	RMstyle={Text,Semibold},
+%	SSstyle={Text,Semibold},
+	TTstyle={Text,Semibold},
+	DefaultFeatures={Ligatures=Common}
+]{plex-otf} % Cool font by IBM
+
+%\renewcommand*\familydefault{\ttdefault}
+\setsansfont{TeX Gyre Adventor}
+%\setmainfont{QTEurotype}
+%\setmainfont{TeX Gyre Termes}
+\setmainfont[Color=rmblack]{TeX Gyre Adventor}
+
+
+%----------------------------------------------------------------
+%---------------------ADDITIONAL FEATURES------------------------
+%----------------------------------------------------------------
+
+\usepackage{multicol}
+
+\def\arraystretch{2}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\lfoot{\fontsize{8}{8}\addfontfeature{Color=color-theme}\today}
+% Center Footer
+\cfoot{\fontsize{8}{8}\addfontfeature{Color=color-theme}Résumé}
+% Right Footer
+\rfoot{\fontsize{8}{8}\addfontfeature{Color=color-theme}Page \thepage}
+
+\def\labelitemi{\fontsize{4}{4}$\color{color-theme}\blacksquare$}
+
+\definecolor{dim-black}{HTML}{000000}
+
+\newcommand{\reducespace}{\vspace*{-8pt}}
+
+\newcommand{\interval}[1]{{\addfontfeature{Color=black}\textit{(#1)}}}
+
+\newcommand{\projectsource}[1]{%
+	{%
+		\addfontfeature{Color=black}Link:\\\url{#1}%
+	}%
+}
+
+\newcommand{\link}[1]{\href{#1}{#1}}
+
+\newcommand{\Mail}[1]{
+	\scriptsize\sffamily\textbf{Email:} \href{mailto:#1}{#1}\hspace*{12pt}%
+}
+\newcommand{\GitHub}[1]{
+	\textbf{GitHub:} \href{https://github.com/#1}{#1}\hspace*{12pt}%
+}
+\newcommand{\LinkedIn}[2]{
+	\textbf{Linked In:} \href{#1}{#2}%
+}
+
+\newcommand{\separator}{%
+	\vspace*{8pt}%
+	\par\noindent{\color{color-theme}\rule{\textwidth}{3pt}}%
+	\vspace*{-4pt}%
+}
+
+\newenvironment{cvlist}
+{\begin{itemize}\setlength\itemsep{-0.2em}}
+{\end{itemize}}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+
+\newcommand{\originaltitle}[1]{%
+	~{\fontsize{6}{7}\sffamily\color{dimgray}{Original Title: #1}}%
+}
+
+\newcommand{\cvitem}[2]{
+	\def\originaltitleparam{#2}
+	\item \parbox{0.48\textwidth}{%
+		#1%
+		\ifx\originaltitleparam\empty% if #2 is empty
+			\\[-4pt]		
+		\else
+			\\~\originaltitle{#2}%
+		\fi
+	}
+}
