@@ -8,21 +8,14 @@ An elegant curriculum vitae template made in  latex with beautiful opensource fo
 **You can also see a sample resume in the `sample-file` directory**
 
 <p align="center">
-    <img src="doc/sample-image-1.png"
+    <img src="doc/resume-0.jpeg"
     width="100%" style="margin: 0 1rem"/>
 </p>
 
 <p align="center">
-    <img src="doc/sample-image-2.png"
+    <img src="doc/resume-1.jpeg"
     width="100%" style="margin: 0 1rem"/>
 </p>
-
-<p align="center">
-    <img src="doc/sample-image-3.png"
-    width="100%" style="margin: 0 1rem"/>
-</p>
-
-
 
 ## Compiling With XeLaTeX or LuaLaTeX
 As a security measue, it's better to disable shell scape and networking
@@ -43,3 +36,11 @@ If you prefeer Lua(La)Tex then it's recommended to run
     width="100%" style="margin: 0 1rem"/>
 </p>
 
+## Converting your resume to a jpeg with ImageMagick
+
+```shell
+$ convert -density 300 resume.pdf -quality 100 resume.jpeg
+```
+
+Note: It works for png and other formats,
+for further knoledge read about ImageMagick
